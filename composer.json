@@ -1,0 +1,14 @@
+{
+	"name": "pierrestoffe/componentbasedtemplating",
+	"description": "This plugins makes it easy to work in a component-based templating environment",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "Pierre Stoffe",
+			"homepage": "https://pierrestoffe.be"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
