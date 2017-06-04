@@ -28,7 +28,7 @@ Scopes remain the same between both options. It means that components and groups
 
 To install the Component-based Templating plugin, follow these steps:
 
-1. Download the [latest release](https://github.com/pierrestoffe/componentbasedtemplating/releases/latest) & unzip the file
+1. Download the [latest release](https://github.com/pierrestoffe/craft-componentbasedtemplating/releases/latest) & unzip the file
 2. Rename the directory into `componentbasedtemplating` if necessary
 3. Install the plugin in the Craft Control Panel under Settings > Plugins
 
