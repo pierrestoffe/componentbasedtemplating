@@ -18,6 +18,9 @@ use Twig_Filter_Method;
 
 class ComponentBasedTemplatingTwigExtension extends \Twig_Extension
 {
+    /**
+     * Set new Twig Global Variables
+     */
     public function getGlobals()
     {
         return [
