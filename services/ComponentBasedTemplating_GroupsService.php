@@ -15,16 +15,9 @@ namespace Craft;
 
 class ComponentBasedTemplating_GroupsService extends BaseApplicationComponent
 {
-    public $type;
-    
-    public function __construct()
-    {
-        $this->type = 'groups';
-    }
-    
     public function __call($method, $variables)
     {
-        echo craft()->componentBasedTemplating->getComponent($method, $variables, $this->type);
+        echo craft()->componentBasedTemplating->getComponent($method, $variables, 'groups');
     }
 
 }
