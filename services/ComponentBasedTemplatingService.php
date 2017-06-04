@@ -33,7 +33,10 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
 
         // Return and show Exception if template is not defined
         if(!$template_path) {
-            throw new Exception(Craft::t("Could not find '{$template_name}' template"));
+            throw new Exception(Craft::t('Could not find "{template_name}" {type}.', array(
+                'template_name' => $template_name,
+                'type' => $type == 'components' ? Craft::t('component') : Craft::t('group')
+            )));
             return false;
         }
 

@@ -12,7 +12,7 @@
  */
 
 return array(
-    'component' => 'component',
-    'group' => 'group',
-    'Could not find "{template_name}" {type}.' => 'Could not find "{template_name}" {type}.',
+    'component' => 'composant',
+    'group' => 'groupe',
+    'Could not find "{template_name}" {type}.' => 'Impossible de trouver le {type} "{template_name}".',
 );
