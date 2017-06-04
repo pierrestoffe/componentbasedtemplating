@@ -1,6 +1,6 @@
 {
 	"name": "pierrestoffe/craft-componentbasedtemplating",
-	"description": "This plugins makes it easy to work in a component-based templating environment",
+	"description": "This plugin makes it easy to work in a component-based templating environment",
 	"type": "craft-plugin",
 	"authors": [
 		{

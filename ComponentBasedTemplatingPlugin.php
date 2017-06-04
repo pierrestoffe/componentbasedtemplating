@@ -2,7 +2,7 @@
 /**
  * Component-based Templating plugin for Craft CMS
  *
- * This plugins makes it easy to work in a component-based templating environment
+ * This plugin makes it easy to work in a component-based templating environment
  *
  * @author    Pierre Stoffe
  * @copyright Copyright (c) 2017 Pierre Stoffe
