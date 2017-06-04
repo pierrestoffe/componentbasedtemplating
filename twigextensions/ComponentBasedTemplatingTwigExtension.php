@@ -20,11 +20,9 @@ class ComponentBasedTemplatingTwigExtension extends \Twig_Extension
 {
     public function getGlobals()
     {
-        $components = craft()->componentBasedTemplating_components;
-        $groups = craft()->componentBasedTemplating_groups;
         return [
-            'components' => $components,
-            'groups' => $groups,
+            'components' => craft()->componentBasedTemplating_components,
+            'groups' => craft()->componentBasedTemplating_groups,
         ];
     }
 }
