@@ -27,12 +27,12 @@ class ComponentBasedTemplatingPlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/pierrestoffe/componentbasedtemplating/blob/master/README.md';
+        return 'https://github.com/pierrestoffe/craft-componentbasedtemplating/blob/master/README.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/pierrestoffe/componentbasedtemplating/master/releases.json';
+        return 'https://raw.githubusercontent.com/pierrestoffe/craft-componentbasedtemplating/master/releases.json';
     }
 
     public function getVersion()
