@@ -12,12 +12,12 @@ The alternative would be to stop outputting DRY components using `macros` and em
 
 The way this plugin works is that it adds a new `components` Global Variables to the Twig environment. You can then use a macro-like notation like `{{ components.artworkCard({}) }}` to grab the `artwork-card.html` component located in the `craft/templates/_components` directory.
 
-On top of `components`, you can also create `groups` using the same logic. Use `{{ groups.artworks }}` and place the `artwork.file` file in the `craft/templates/_groups` directory. Think of `groups` as groups of `components` that you need to output side by side in a template. For this reason, the core of a `group` file will often be made of a `for` loop.
+On top of `components`, you can also create `groups` using the same logic. Use `{{ groups.artworks }}` and place the `artwork.html` file in the `craft/templates/_groups` directory. Think of `groups` as groups of `components` that you need to output side by side in a template. For this reason, the core of a `group` file will often be made of a `for` loop.
 
 Find working examples in this repo's Wiki.
 
 Compared to `macros`, this plugin brings the following changes:
-- makes calls about ≈12.5% slower (when the page isn’t cached)
+- makes calls ≈12.5% slower (when the page isn’t cached)
 - works in Craft 2 and Craft 3
 - no need to do the extra-work of defining macros in the `_macros/components` and `_macros/groups` files
 - no need to re-import the `_macros/components` and `_macros/groups` macros in component and groups anymore
@@ -51,5 +51,5 @@ Some things to do, and ideas for potential features:
 
 ## Credits
 
-Brought to you by [Pierre Stoffe](https://pierrestoffe.be)
+Brought to you by [Pierre Stoffe](https://pierrestoffe.be)  
 Kickstarted using [pluginfactory.io](https://pluginfactory.io)
