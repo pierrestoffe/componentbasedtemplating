@@ -15,11 +15,17 @@ namespace Craft;
 
 class ComponentBasedTemplatingService extends BaseApplicationComponent
 {
-    function camelCaseToUnderscore($string)
+    /**
+     * Transform a camelCase string into a dashed string
+     */
+    function camelCaseToDash($string)
     {
         return strtolower(preg_replace('/(?<!^)[A-Z]/', '-$0', $string));
     }
     
+    /**
+     * Find the appropriate template and render it with the provided variables
+     */
     function getComponent($method, $variables, $type)
     {
         // Set template path
@@ -27,7 +33,7 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
         craft()->path->setTemplatesPath($templates_path);
 
         // Try and find the needed template
-        $name = $this->camelCaseToUnderscore($method);
+        $name = $this->camelCaseToDash($method);
         $template_name = "_{$type}/{$name}";
         $template_path = craft()->templates->doesTemplateExist($template_name);
 
