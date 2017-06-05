@@ -15,6 +15,10 @@ namespace Craft;
 
 class ComponentBasedTemplating_GroupsService extends BaseApplicationComponent
 {
+    /**
+     * @param string $method
+     * @param array $variables
+     */
     public function __call($method, $variables)
     {
         echo craft()->componentBasedTemplating->getComponent($method, $variables, 'groups');
