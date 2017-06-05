@@ -30,7 +30,8 @@ To install the Component-based Templating plugin, follow these steps:
 
 1. Download the [latest release](https://github.com/pierrestoffe/craft-componentbasedtemplating/releases/latest) & unzip the file
 2. Rename the directory into `componentbasedtemplating` if necessary
-3. Install the plugin in the Craft Control Panel under Settings > Plugins
+3. Copy the `componentbasedtemplating` directory into your `craft/plugins` directory
+4. Install the plugin in the Craft Control Panel under Settings > Plugins
 
 Component-based Templating works on Craft 2.4.x and Craft 2.5.x.
 
@@ -48,6 +49,7 @@ Some things to do, and ideas for potential features:
 * Provide a few components/groups examples
 * Make the terminology flexible
 * Make the template paths flexible
+* Adapt for Craft 3
 
 ## Credits
 

@@ -17,6 +17,8 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
 {
     /**
      * Transform a camelCase string into a dashed string
+     * @param string $string
+     * @return string
      */
     function camelCaseToDash($string)
     {
@@ -25,6 +27,10 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
     
     /**
      * Find the appropriate template and render it with the provided variables
+     * @param string $method
+     * @param array $variables
+     * @param string $type
+     * @return string
      */
     function getComponent($method, $variables, $type)
     {
