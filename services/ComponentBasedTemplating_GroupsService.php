@@ -21,7 +21,10 @@ class ComponentBasedTemplating_GroupsService extends BaseApplicationComponent
      */
     public function __call($method, $variables)
     {
-        echo craft()->componentBasedTemplating->getComponent($method, $variables, 'groups');
+        $name = craft()->componentBasedTemplating_settings->getGroupsSetting('name');
+        $template_path = craft()->componentBasedTemplating_settings->getGroupsSetting('templatePath');
+         
+        echo craft()->componentBasedTemplating->getGroup($method, $variables, $name, $template_path);
     }
 
 }
