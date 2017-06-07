@@ -20,7 +20,7 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
      * @param string $string
      * @return string
      */
-    function camelCaseToDash($string)
+    public function camelCaseToKebab($string)
     {
         return strtolower(preg_replace('/(?<!^)[A-Z]/', '-$0', $string));
     }
@@ -29,25 +29,26 @@ class ComponentBasedTemplatingService extends BaseApplicationComponent
      * Find the appropriate template and render it with the provided variables
      * @param string $method
      * @param array $variables
-     * @param string $type
+     * @param string $name
+     * @param string $template_path
      * @return string
      */
-    function getComponent($method, $variables, $type)
+    public function getComponent($method, $variables, $name, $template_path)
     {
         // Set template path
         $templates_path = craft()->path->getSiteTemplatesPath();
         craft()->path->setTemplatesPath($templates_path);
 
         // Try and find the needed template
-        $name = $this->camelCaseToDash($method);
-        $template_name = "_{$type}/{$name}";
+        $kebab_name = $this->camelCaseToKebab($method);
+        $template_name = "{$template_path}/{$kebab_name}";
         $template_path = craft()->templates->doesTemplateExist($template_name);
 
         // Return and show Exception if template is not defined
         if(!$template_path) {
-            throw new Exception(Craft::t('Could not find "{template_name}" {type}.', array(
+            throw new Exception(Craft::t('Could not find "{template_name}" {name}.', array(
                 'template_name' => $template_name,
-                'type' => $type == 'components' ? Craft::t('component') : Craft::t('group')
+                'name' => $name
             )));
             return false;
         }

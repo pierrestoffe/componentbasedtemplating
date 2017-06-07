@@ -21,7 +21,10 @@ class ComponentBasedTemplating_ComponentsService extends BaseApplicationComponen
      */
     public function __call($method, $variables)
     {
-        echo craft()->componentBasedTemplating->getComponent($method, $variables, 'components');
+        $name = craft()->componentBasedTemplating_settings->getComponentsSetting('name');
+        $template_path = craft()->componentBasedTemplating_settings->getComponentsSetting('templatePath');
+        
+        echo craft()->componentBasedTemplating->getComponent($method, $variables, $name, $template_path);
     }
 
 }
