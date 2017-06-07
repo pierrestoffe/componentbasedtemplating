@@ -47,8 +47,6 @@ Component-based Templating works on Craft 2.4.x and Craft 2.5.x.
 Some things to do, and ideas for potential features:
 
 * Provide a few components/groups examples
-* Make the terminology flexible
-* Make the template paths flexible
 * Adapt for Craft 3
 
 ## Credits
