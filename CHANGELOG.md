@@ -1,5 +1,10 @@
 # Component-based Templating Changelog
 
+## 1.0.0 -- 2017.09.04
+
+* [Added] Made the terminology flexible
+* [Added] Make the template paths flexible
+
 ## 1.0-beta -- 2017.06.04
 
 * Initial release, not meant for production
