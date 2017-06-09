@@ -1,6 +1,11 @@
 # Component-based Templating Changelog
 
-## 1.0.0 -- 2017.09.04
+## 1.0.1 -- 2017.09.04
+
+* [Changed] Improved settings model processing speed
+* [Changed] Per-value comments in config.php
+
+## 1.0.0 -- 2017.08.04
 
 * [Added] Made the terminology flexible
 * [Added] Make the template paths flexible
