@@ -6,20 +6,20 @@
 
 return array(
     /**
-     * @param array
-     * Set the variable name and template path for the individual components
+     * Individual components
+     * Set the global variable name and template path
      */
     'components' => array(
-        'name' => 'components',
-        'templatePath' => '_components'
+        'name' => 'components', // Default is 'components'
+        'templatePath' => '_components' // Default is '_components'
     ),
     
     /**
-     * @param array
-     * Set the variable name and template path for the individual components
+     * Grouped components
+     * Set the global variable name and template path
      */
-     'groups' => array(
-         'name' => 'groups',
-         'templatePath' => '_groups'
-     )
+    'groups' => array(
+        'name' => 'groups', // Default is 'groups'
+        'templatePath' => '_groups' // Default is '_groups'
+    )
 );

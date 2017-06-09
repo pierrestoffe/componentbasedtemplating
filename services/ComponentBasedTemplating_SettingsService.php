@@ -15,37 +15,22 @@ namespace Craft;
 
 class ComponentBasedTemplating_SettingsService extends BaseApplicationComponent
 {
-    public function getSettings()
-    {
-        return new ComponentBasedTemplating_SettingsModel;
-    }
+    public $settings;
+    public $components_settings;
+    public $groups_settings;
     
-    public function getSetting($name)
-    {
-        $settings = $this->getSettings();
-        return $settings[$name];
-    }
-    
-    public function getComponentsSettings()
-    {
-        return $this->getSetting('components');
+    public function __construct() {
+        $this->settings = new ComponentBasedTemplating_SettingsModel;
     }
     
     public function getComponentsSetting($name)
     {
-        $settings = $this->getComponentsSettings();
-        return $settings[$name];
-    }
-    
-    public function getGroupsSettings()
-    {
-        return $this->getSetting('groups');
+        return $this->settings['components'][$name];
     }
     
     public function getGroupsSetting($name)
     {
-        $settings = $this->getGroupsSettings();
-        return $settings[$name];
+        return $this->settings['groups'][$name];
     }
 
 }
