@@ -17,8 +17,8 @@ On top of `components`, you can also create `groups` using the same logic. Use `
 Find working examples in this repo's Wiki.
 
 Compared to `macros`, this plugin brings the following changes:
-- makes calls ≈12.5% slower (when the page isn’t cached)
-- works in Craft 2 and Craft 3
+- makes calls ≈5% slower (when the page isn’t cached)
+- the technique will work in both Craft 2 and Craft 3
 - no need to do the extra-work of defining macros in the `_macros/components` and `_macros/groups` files
 - no need to re-import the `_macros/components` and `_macros/groups` macros in component and groups anymore
 
