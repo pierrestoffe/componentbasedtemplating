@@ -4,8 +4,8 @@
       "downloadUrl": "https://github.com/pierrestoffe/craft-componentbasedtemplating/archive/v1.0.1.zip",
       "date": "2017-09-04T20:55:48.730Z",
       "notes": [
-          "[Changed] Improved settings model processing speed",
-          "[Changed] Per-value comments in config.php"
+          "[Improved] Improved settings model processing speed",
+          "[Improved] Per-value comments in config.php"
       ]
   },
   {

@@ -2,8 +2,8 @@
 
 ## 1.0.1 -- 2017.09.04
 
-* [Changed] Improved settings model processing speed
-* [Changed] Per-value comments in config.php
+* [Improved] Improved settings model processing speed
+* [Improved] Per-value comments in config.php
 
 ## 1.0.0 -- 2017.08.04
 
